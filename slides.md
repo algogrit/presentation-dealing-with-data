@@ -69,7 +69,7 @@ class: center, middle
 ---
 class: center, middle
 
-Relational Examples: `Microsoft SQL Server`, `Oracle Database`, `MySQL`, `PostgreSQL`, `IBM DB2`, `Spanner`
+Relational Examples: `Microsoft SQL Server`, `Oracle Database`, `MySQL`, `PostgreSQL`, `IBM DB2`, [`Cloud SQL`](https://cloud.google.com/sql), [`Spanner`](https://cloud.google.com/spanner), etc.
 
 ---
 class: center, middle
@@ -119,7 +119,7 @@ Let's visualize...
 ---
 class: center, middle
 
-Columnar Examples: `Google BigQuery`, `Cassandra`, `HBase`, `MariaDB`, `Azure SQL Data Warehouse`, `MonetDB`
+Columnar Examples: [`Google BigQuery`](https://cloud.google.com/bigquery/), `Cassandra`, `HBase`, `MariaDB`, `Azure SQL Data Warehouse`, `MonetDB`
 
 ---
 class: center, middle
@@ -178,7 +178,7 @@ Ideal use cases:
 ---
 class: center, middle
 
-Wide-column store examples: `Apache Cassandra`, `Scylla`, `Apache HBase`, `Google BigTable`, and `Microsoft Azure Cosmos DB`
+Wide-column store examples: `Apache Cassandra`, `Scylla`, `Apache HBase`, [`Google BigTable`](https://cloud.google.com/bigtable), `Microsoft Azure Cosmos DB`
 
 ---
 class: center, middle
@@ -385,11 +385,69 @@ The data from one or more OLTP databases is ingested into OLAP systems through a
 ---
 class: center, middle
 
-## Data Mart vs Data Lake
+## Data Warehouse
+
+---
+class: center, middle
+
+A data warehouse is a type of data management system that is designed to enable and support business intelligence (BI) activities, especially analytics.
+
+---
+class: center, middle
+
+Data warehouses are solely intended to perform queries and analysis and often contain large amounts of historical data.
 
 ---
 
+- centralizes and consolidates large amounts of data from multiple sources
 
+- analytical capabilities allow organizations to derive valuable business insights to improve decision-making
+
+---
+class: center, middle
+
+## Data Lake vs Data Mart
+
+---
+class: center, middle
+
+A data lake is the place where you dump all forms of data generated in various parts of your business.
+
+.content-credits[https://cloud.google.com/learn/what-is-a-data-lake]
+
+---
+class: center, middle
+
+Use Cloud Storage as Data Lake
+
+.content-credits[https://cloud.google.com/architecture/build-a-data-lake-on-gcp]
+
+---
+class: center, middle
+
+A data warehouse usually only stores data that's already modeled/structured.
+
+.content-credits[https://cloud.google.com/architecture/bigquery-data-warehouse]
+
+---
+class: center, middle
+
+A data-mart is a subsection of the data-warehouse, designed and built specifically for a particular department/business function.
+
+---
+
+3 Types of Data Mart:
+
+- Dependent Data Marts - A dependent data mart is constructed from an existing data warehouse. It has a top-down approach that begins with storing all your business data in one centralized location, then withdraws a defined portion of the data when needed for analysis.
+
+- Independent Data Marts - An independent data mart is a stand-alone system, which is created without the use of a data warehouse and focuses on one business function. The data is released from internal or external data sources, refined, then loaded to the data mart, where it is saved until needed or business analysis.
+
+- Hybrid Data Marts - A hybrid data mart integrates data from a current data warehouse and additional operational source systems. It combines speed and end-user focus of a top-down approach with the assistance of the enterprise-level integration of the bottom up method.
+
+---
+class: center, middle
+
+## Batch vs Stream processing
 
 ---
 class: center, middle
