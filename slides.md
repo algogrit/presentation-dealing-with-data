@@ -23,6 +23,284 @@ class: center, middle
 ---
 class: center, middle
 
+## Classification of Databases
+
+---
+class: center, middle
+
+Broadly classified as: Relational, Columnar, KV, Graph, Time-series, etc.
+
+---
+class: center, middle
+
+### Relational Databases
+
+---
+class: center, middle
+
+since 1970s
+
+---
+
+- multiple, related tables
+
+- stored in rows and columns
+
+---
+class: center, middle
+
+![Relational](assets/images/relational.png)
+
+---
+class: center, middle
+
+#### RDBMS (Relational database management systems)
+
+---
+
+- set-theory based systems
+
+- interacting with queries: SQL (Structured Query Language)
+
+- Data values are typed, have schema
+
+- tables can join
+
+---
+class: center, middle
+
+Relational Examples: `Microsoft SQL Server`, `Oracle Database`, `MySQL`, `PostgreSQL`, `IBM DB2`, `Spanner`
+
+---
+class: center, middle
+
+*ACID*!
+
+---
+class: center, middle
+
+#### Performance & optimization of RDBMS?
+
+---
+
+- Retrieve
+
+- Insert
+
+- Schema change
+
+- Delete
+
+---
+class: center, middle
+
+What about sparse data?
+
+---
+class: center, middle
+
+### Columnar Databases
+
+---
+class: center, middle
+
+aka `column data stores`
+
+---
+class: center, middle
+
+data from a given column stored together
+
+---
+class: center, middle
+
+Let's visualize...
+
+---
+class: center, middle
+
+Columnar Examples: `Google BigQuery`, `Cassandra`, `HBase`, `MariaDB`, `Azure SQL Data Warehouse`, `MonetDB`
+
+---
+class: center, middle
+
+#### Performance & optimization of Columnar Databases?
+
+---
+
+- Retrieve
+
+- Insert
+
+- Schema change
+
+- Delete
+
+---
+class: center, middle
+
+When you’re querying a columnar database, it essentially ignores all of the data that doesn’t apply to the query.
+
+---
+class: center, middle
+
+## Wide column databases
+
+---
+class: center, middle
+
+aka `column-family stores`
+
+---
+class: center, middle
+
+A Columnar data store will store each column separately on disk
+
+---
+class: center, middle
+
+A Wide-column database is a type of columnar database that supports a column family stored together on disk, not just a single column.
+
+---
+
+Ideal use cases:
+
+- Log data
+
+- IoT (Internet of Things) sensor data
+
+- Time-series data, such as temperature monitoring or financial trading data
+
+- Attribute-based data, such as user preferences or equipment features
+
+- Real-time analytics
+
+---
+class: center, middle
+
+Wide-column store examples: `Apache Cassandra`, `Scylla`, `Apache HBase`, `Google BigTable`, and `Microsoft Azure Cosmos DB`
+
+---
+class: center, middle
+
+### Document Databases
+
+---
+class: center, middle
+
+store *documents*
+
+---
+class: center, middle
+
+Typically *schemaless*
+
+---
+
+- has a unique ID field
+
+- can store nested strucutres
+
+- can be indexed, replicated
+
+---
+class: center, middle
+
+Document Database examples: `MongoDB`, `Amazon DocumentDB`, `Apache CouchDB`, [`Cloud Firestore`](https://firebase.google.com/docs/firestore)
+
+---
+class: center, middle
+
+Document databases are simple and scalable, making them useful for mobile apps that need fast iterations.
+
+---
+class: center, middle
+
+### Key-Value Stores
+
+---
+class: center, middle
+
+simplest type of NoSQL databases
+
+---
+class: center, middle
+
+save data as a group of key-value pairs
+
+---
+class: center, middle
+
+Some KV implementations permit complex value types: hashes, list, etc.
+
+---
+class: center, middle
+
+KV Examples: `Amazon DynamoDB`, `Redis`, `Riak`, [`Cloud Datastore`](https://cloud.google.com/datastore)
+
+---
+class: center, middle
+
+Key-value databases are highly scalable and can handle high volumes of traffic, making them ideal for processes such as session management for web applications, user sessions for massive multi-player online games, and online shopping carts.
+
+---
+class: center, middle
+
+### Graph Databases
+
+---
+class: center, middle
+
+based on *graph theory*
+
+---
+class: center, middle
+
+graph databases excel at dealing with highly interconnected data
+
+---
+class: center, middle
+
+A graph database consists of nodes and relationships between nodes.
+
+---
+class: center, middle
+
+![Graph](assets/images/person-cinema.png)
+
+---
+class: center, middle
+
+Both nodes and relationships can have properties -- typically key-value pairs -- to store data.
+
+---
+class: center, middle
+
+Strength: traversing through nodes by following relationships
+
+---
+class: center, middle
+
+Graph database examples: `Datastax Enterprise Graph`, `Neo4J`, `Dgraph`, `ArangoDB`, `Amazon Neptune`
+
+---
+class: center, middle
+
+### Time-series database
+
+---
+class: center, middle
+
+A time series database is a database optimized for time-stamped, or time series, data.
+
+---
+class: center, middle
+
+Time-series db examples: `Druid`, `eXtremeDB`, `InfluxDB`
+
+---
+class: center, middle
+
 ## OLTP vs OLAP
 
 ---
