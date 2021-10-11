@@ -276,7 +276,7 @@ Both nodes and relationships can have properties -- typically key-value pairs --
 ---
 class: center, middle
 
-Strength: traversing through nodes by following relationships
+*Strength*: traversing through nodes by following relationships
 
 ---
 class: center, middle
