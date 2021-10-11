@@ -452,6 +452,91 @@ class: center, middle
 ---
 class: center, middle
 
+### Batch Processing
+
+---
+class: center, middle
+
+Batch processing refers to processing of high volume of data in batch within a specific time span.
+
+---
+
+- It processes large volume of data all at once.
+
+- Batch processing is used when data size is known and finite.
+
+- It takes little longer time to processes data.
+
+- It requires dedicated staffs to handle issues.
+
+- Batch processor processes processes data in multiple passes.
+
+- When data is collected overtime and similar data batched/grouped together then in that case batch processing is used.
+
+---
+
+- Data is collected over time
+
+- Once data is collected, it’s sent for processing
+
+- Batch processing is lengthy and is meant for large quantities of information that aren’t time-sensitive
+
+---
+class: center, middle
+
+### Stream Processing
+
+---
+class: center, middle
+
+Under the streaming model, data is fed into analytics tools piece-by-piece.
+
+---
+class: center, middle
+
+The processing is usually done in real time.
+
+---
+
+- Data streams continuously
+
+- Data is processed piece-by-piece
+
+- Stream processing is fast and is meant for information that’s needed immediately
+
+---
+class: center, middle
+
+![Stream processing](assets/images/stream-processing.png)
+
+---
+class: center, middle
+
+Stream processing has become a must-have for modern applications.
+
+---
+class: center, middle
+
+#### Window processing
+
+---
+class: center, middle
+
+Windowing functions divide unbounded collections into logical components, or windows.
+
+---
+class: center, middle
+
+![Window streaming](assets/images/window-processing.png)
+
+---
+class: center, middle
+
+Stream processing examples: `Apache Spark`, `Apache Storm`
+
+---
+class: center, middle
+
 Code
 https://github.com/algogrit/presentation-dealing-with-data
 
