@@ -658,6 +658,11 @@ Stream processing examples: `Apache Spark`, `Apache Storm`
 ---
 class: center, middle
 
+Stream processing can be windowed too: *Fixed*, *Sliding*
+
+---
+class: center, middle
+
 Code
 https://github.com/algogrit/presentation-dealing-with-data
 
