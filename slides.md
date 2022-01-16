@@ -644,6 +644,18 @@ class: center, middle
 Stream processing examples: `Apache Spark`, `Apache Storm`
 
 ---
+
+### Batch vs Stream Processing
+
+- Ingestion
+  - Delivery of Data
+
+- Processing (Eg: DataFlow (Apache Beam -> Spark, DataFlow), DataProc, CloudFunction, BigQuery, compute engine)
+  - Analytics of Data
+
+- Storage (Eg: CloudSQL, Cloud Storage, Spanner, BigTable, BigQuery, Raw-Disk/Object based Storage - like GCS)
+
+---
 class: center, middle
 
 Code
